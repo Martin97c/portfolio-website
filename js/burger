@@ -1,0 +1,11 @@
+/* ========= BURGER MENU FUNCTIONALITY ========= */
+
+const burgerButton = document.getElementById('burger-button');
+const headerNav = document.querySelector('.header-nav');
+
+/* Open Burger Menu */
+burgerButton.addEventListener('click', () => {
+    headerNav.classList.toggle('is-open')
+});
+
+/* Close burger */

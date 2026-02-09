@@ -3,9 +3,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-logo">
+                <img src="./assets/images/mc-log1.png" alt="logo MC Studio ">
+            </div>
+            <nav class="header-nav">
+                <a href="#web">Web Design</a>
+             <!--<a href="#graphic">Graphic Design</a> -->
+                <a href="#production">Production</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <!--BURGER BUTTON-->
+            <button id="burger-button" class="burger-button"><span></span><span></span><span></span></button>
+        </div>
+
+    </header>
+
+    <main>
+        <!--Hero Banner-->
+        <section class="layout-hero">
+            <!--Left Column Picture-->
+            <aside class="profile-pic">
+                <img src="./assets/images/profile-pic.avif" alt="Profile picture Martin Cedeno">
+            </aside>
+
+            <!--Right Column Information-->
+            <section class="information">
+                <h1 class="hero-title">Martín Cedeño Espinosa</h1>
+                <h2 class="hero-subtitle">Multimedia Designer & Web Developer</h2>
+                <p class="hero-description">I am a dedicated multimedia producer, known for meeting deadlines and budgets without compromising quality. I have skills in graphic design and video editing, and enjoy working collaboratively in a team to achieve better results. I am always looking for innovative ways to improve the production process.</p>
+                <section class="skills">
+                    <h3 class="skill-title">Skills</h3> 
+
+                    <div class="skills">
+                        <div class="skill-row">
+                            <span class="skill-name">Databases SQL</span>
+                            <img src="./assets/images/sql-skill.png" alt="Databases SQL logo">
+                        </div>
+
+                        <div class="skill-row">
+                            <span class="skill-name">Adobe Illustrator</span>
+                            <img src="./assets/images/illustrator-skill.png" alt="Adobe Illustrator logo">
+                        </div>
+
+                        <div class="skill-row">
+                            <span class="skill-name">Adobe Premiere Pro</span>
+                            <img src="./assets/images/premiere-skill.png" alt="Adobe Premiere Pro logo">
+                        </div>
+
+                        <div class="skill-row">
+                            <span class="skill-name">Adobe After Effects</span>
+                            <img src="./assets/images/after-effects-skill.png" alt="Adobe After Effects logo">
+                        </div>
+
+                        <div class="skill-row">
+                            <span class="skill-name">Adobe Photoshop</span>
+                            <img src="./assets/images/photoshop-skill.png" alt="Adobe Photoshop logo">
+                        </div>
+
+                        <div class="skill-row">
+                            <span class="skill-name">Adobe Audition</span>
+                            <img src="./assets/images/audition-skill.png" alt="Adobe Audition logo">
+                        </div>
+
+                        <div class="skill-row">
+                            <span class="skill-name">WordPress</span>
+                            <img src="./assets/images/wordpress-skill.png" alt="WordPress CMS logo">
+                        </div>
+
+                        <div class="skill-row">
+                            <span class="skill-name">Microsoft Office</span>
+                            <img src="./assets/images/mic-office-skill.png" alt="Microsoft Office logo">
+                        </div>
+                    </div>
+                    
+                </section>
+            </section>
+        </section>
+        
+        <!--Servicios-->
+        <!--WEB DESIGN-->
+        <section id="web" class="service">
+            <h2 class="section-title">Web Design</h2>
+
+            <div class="projects-grid">
+                <!--Data-image= imagen grande, data-link= link real a proyecto-->
+                <div class="project-card" data-image="./assets/images/proj-mitaddelmundo.avif" data-link="https://mitaddelmundo.gob.ec/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-mitaddelmundo.avif" alt="Home Page Mitad del Mundo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Festival del Globo</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-quoka.png" data-link="https://quoka.ec/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-quoka.png" alt="Home Page Quoka">
+                    </div>
+                    <div class="project-content">
+                        <h3>Quoka</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-hosteriadelparque.jpg" data-link="https://hosteriadelparque.com/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-hosteriadelparque.jpg" alt="Home Page Hosteria del Parque">
+                    </div>
+                    <div class="project-content">
+                        <h3>Hosteria del Parque</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-euroinstruments.jpg" data-link="https://euroinstruments.com.ec/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-euroinstruments.jpg" alt="Home Page Euroinstruments">
+                    </div>
+                    <div class="project-content">
+                        <h3>Euroinstruments</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-recoverec.png" data-link="https://recover.ec/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-recoverec.png" alt="Home Page Recover EC">
+                    </div>
+                    <div class="project-content">
+                        <h3>Recover EC</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-buddyphone.png" data-link="https://buddy-phone.com/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-buddyphone.png" alt="Home Page Buddy Phone">
+                    </div>
+                    <div class="project-content">
+                        <h3>Buddy Phone</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>  
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-inmohabitart.png" data-link="https://inmohabitart.com/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-inmohabitart.png" alt="Home Page Inmohabitart">
+                    </div>
+                    <div class="project-content">
+                        <h3>Inmohabitart</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-draandreaaguilar.png" data-link="https://draandreaaguilar.ec/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-draandreaaguilar.png" alt="Home Page Dra. Andrea Aguilar">
+                    </div>
+                    <div class="project-content">
+                        <h3>Dra. Andrea Aguilar</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-laestribera.png" data-link="https://la-estribera.com/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-laestribera.png" alt="Home Page La Estribera">
+                    </div>
+                    <div class="project-content">
+                        <h3>La Estribera</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-vencco.png" data-link="https://vencco.com/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-vencco.png" alt="Home Page Vencco">
+                    </div>
+                    <div class="project-content">
+                        <h3>Vencco</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-traumatherapy.png" data-link="https://traumatherapy.ec/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-traumatherapy.png" alt="Home Page Trauma Therapy Center">
+                    </div>
+                    <div class="project-content">
+                        <h3>Trauma Therapy Center</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="./assets/images/proj-manteninsa.png" data-link="https://manteninsa.com/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-manteninsa.png" alt="Home Page Manteninsa">
+                    </div>
+                    <div class="project-content">
+                        <h3>Manteninsa</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                <div class="project-card" data-image="./assets/images/proj-plusdental.png" data-link="http://plusdentalclinic.net/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-plusdental.png" alt="Home Page Plus Dental Clinic">
+                    </div>
+                    <div class="project-content">
+                        <h3>Plus Dental Clinic</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                <div class="project-card" data-image="./assets/images/proj-dicoim.png" data-link="https://dicoim.com/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-dicoim.png" alt="Home Page Plus Dicoim">
+                    </div>
+                    <div class="project-content">
+                        <h3>Dicoim</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                 <div class="project-card" data-image="./assets/images/proj-urkutrail.png" data-link="https://urkutrail.com/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-urkutrail.png" alt="Home Page Urku Trail Running">
+                    </div>
+                    <div class="project-content">
+                        <h3>Urku Trail Running</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                <div class="project-card" data-image="./assets/images/proj-rcedenophoto.png" data-link="https://rcedenophotography.com/">
+                    <div class="project-image">
+                        <img src="./assets/images/proj-rcedenophoto.png" alt="Home Page Roberto Cedeno Photography">
+                    </div>
+                    <div class="project-content">
+                        <h3>RCedeno Photography</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--GRAPHIC DESIGN-->
+    <!--    <section id="graphic" class="service">
+            <h2 class="section-title">Graphic Design</h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="#" alt="Logo Design for Bomaco">
+                    </div>
+                    <div class="project-content">
+                        <h3>Bomaco</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="#" alt="Logo Design for Finca las Cabritas">
+                    </div>
+                    <div class="project-content">
+                        <h3>Finca Las Cabritas</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
     
+        <!--PRODUCTION-->
+        <section id="production" class="service">
+            <h2 class="section-title">Production & Post</h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card" data-image="./assets/images/prod-sachatamia.avif" data-link="https://www.facebook.com/watch/?v=2796101443827014&extid=CL-UNK-UNK-UNK-IOS_GK0T-GK1C&ref=sharing1C">
+                    <div class="project-image">
+                        <img src="./assets/images/prod-sachatamia.avif" alt="Sachatamia Lodge entrance logo in Mindo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sachatamia Lodge</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div> 
+                </div>
+                <div class="project-card" data-image="./assets/images/prod-granaki.avif" data-link="https://video.wixstatic.com/video/72f882_4fa53cb4a76a45fb9f32535bc30c4224/720p/mp4/file.mp4">
+                    <div class="project-image">
+                        <img src="./assets/images/prod-granaki.avif" alt="Recycling campaing  reel for Gran Aki - Gira App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Gran Aki - Gira App</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                <div class="project-card" data-image="./assets/images/prod-chimborazolodege.avif" data-link="https://www.instagram.com/tv/CDJrDx5loSR/?utm_medium=copy_linkHorseback%20EcuadorRoles%3A%20C%C3%A1mara%20y%20postproducci%C3%B3n.%20(No%20incluye%20tomas%20de%20dron)https%3A%2F%2Ffb.watch%2F8FN3c5Q7gX%2FGAD%20QuijosRoles%3A%20C%C3%A1maras%20y%20postproducci%C3%B3n.%20(No%20incluye%20tomas%20de%20dron)https%3A%2F%2Ffb.watch%2F8FN_TDlqbT%2FNeblina%20ForestRoles%3A%20C%C3%A1maras%20y%20Postproducci%C3%B3n.https%3A%2F%2Ffb.watch%2FagXJSZo5dk%2FSachatamia%20LodgeRoles%3A%20C%C3%A1maras%20y%20Postproducci%C3%B3nhttps%3A%2F%2Ffb.watch%2FagXV6dO7yN%2FTik%20Tok%20Gran%20Ak%C3%AD%20(Adjunto%20en%20el%20Drive)Roles%3A">
+                    <div class="project-image">
+                        <img src="./assets/images/prod-chimborazolodege.avif" alt="Promotional reel for Chimborazo Lodge">
+                    </div>
+                    <div class="project-content">
+                        <h3>Chimborazo Lodge</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                <div class="project-card" data-image="./assets/images/prod-horsebacke.avif" data-link="https://www.facebook.com/share/v/1GRERA2Q87/">
+                    <div class="project-image">
+                        <img src="./assets/images/prod-horsebacke.avif" alt="Promotional reel for Horseback Ecuador horsebackriding">
+                    </div>
+                    <div class="project-content">
+                        <h3>Horseback Ecuador</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>  
+                </div>
+                 <div class="project-card" data-image="./assets/images/prod-neblinapinnocchio.png" data-link="https://www.facebook.com/watch/?extid=NS-UNK-UNK-UNK-IOS_GK0T-GK1C&v=893356147840954">
+                    <div class="project-image">
+                        <img src="./assets/images/prod-neblinapinnocchio.png" alt="Promotional reel for Neblina Forest Pinnocchio Anole lizard">
+                    </div>
+                    <div class="project-content">
+                        <h3>Neblina Forest - Lizard </h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>  
+                </div>
+                <div class="project-card" data-image="./assets/images/prod-quijos.avif" data-link="https://www.facebook.com/share/v/1Jh6Qd5tJW/">
+                    <div class="project-image">
+                        <img src="./assets/images/prod-neblinaTunki.png" alt="Promotional reel for Neblina Forest Andeand cock of the rock">
+                    </div>
+                    <div class="project-content">
+                        <h3>Neblina Forest - Bird</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                <div class="project-card" data-image="./assets/images/prod-quijos.avif" data-link="https://www.facebook.com/share/v/1Jh6Qd5tJW/">
+                    <div class="project-image">
+                        <img src="./assets/images/prod-neblinatoucan.png" alt="Promotional reel for Neblina Forest Plate Billed Mountain Toucan">
+                    </div>
+                    <div class="project-content">
+                        <h3>Neblina Forest - Toucan</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/images/prod-quijos.avif" alt="Promotional reel for GAD Quijos">
+                    </div>
+                    <div class="project-content">
+                        <h3>GAD Quijos</h3>
+                        <button class="project-link">Show Project<span class="arrow">→</span></button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CONTACT FOOTER-->
+    <footer id ="contact" class="site-footer">
+        <section class="footer-layout">
+            <!--Left Column Contact Logo-->
+            <section class="footer-logo">
+                <img src="./assets/images/mc-log1.png" alt="MC Studio logo footer">
+                <p class="foot-description">A digital agency specializing in strategic web design and development. We craft high-impact digital experiences, merging clean aesthetics with modern technology to elevate your brand’s online presence.</p>
+            </section>
+            <!--Middle Column Contact Info-->
+            <address class="footer-contact">
+                <h3 class="footer-title">Contact Info</h3>
+                <ul>
+                    <li class="contact-item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M2 4h20v16H2z M22 4l-10 7L2 4" />
+                        </svg>
+                        <a href="mailto:martin@email.com">martin@email.com</a>
+                    </li>
+                    <li class="contact-item">
+                         <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                        </svg>
+                        <span>Quito, Ecuador</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M6.62 10.79a15.09 15.09 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.54.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.34.26 2.67.76 3.88a1 1 0 01-.21 1.11l-2.43 2.8z"/>
+                        </svg>
+                        <a href="tel:+593 987554328">+593 987554328</a>
+                    </li>
+                </ul> 
+            </address>
+            <!--Right Column Contact Form-->
+            <section class="footer-form">
+                <h3 class="footer-title">Get in Touch</h3>
+
+                <form id="contact-form">
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Your email" required>
+                    <textarea rows="4" placeholder="Your message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </section>
+        
+        <!--Signature-->
+        <section class="signature">
+            <p>2026 Martín Cedeño. All rights reserved.</p>
+        </section>
+    </footer>
+
+
+    <!-- ========== LIGHTBOX ========== -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-overlay"></div>
+
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">×</button>
+
+            <img src="" alt="Project preview" class="lightbox-image">
+
+            <a href="#" target="_blank" id="lightbox-link" class="lightbox-btn">
+            Go to Project<span class="arrow">→</span>
+            </a>
+        </div>
+    </div>
+
+
+<!-- ========== JAVASCRIPT FILES ========== -->    
+<script src="js/lightbox.js"></script>
+<script src="js/burger"></script>
 </body>
-</html>
+</html> 
